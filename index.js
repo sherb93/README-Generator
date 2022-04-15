@@ -36,7 +36,7 @@ function init() {
             {
                 type: "input",
                 message: questions[2],
-                name: "project_name"
+                name: "title"
             },
             {
                 type: "input",
@@ -52,7 +52,7 @@ function init() {
             {
                 type: "input",
                 message: questions[5],
-                name: "dependencies_cmd"
+                name: "installation"
             },
             {
                 type: "input",
@@ -62,17 +62,17 @@ function init() {
             {
                 type: "input",
                 message: questions[7],
-                name: "tips"
+                name: "info"
             },
             {
                 type: "input",
                 message: questions[8],
-                name: "how_to_contribute"
+                name: "contributing"
             },
         ])
         .then((data) => {
-            console.log(data);
-            fs.writeFile("README.md", data, (err) =>
+            console.log(data)
+            fs.writeFile("README.md", markdown(data), (err) =>
             err ? console.log(err) : console.log("making README...")
             );
         });

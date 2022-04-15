@@ -31,10 +31,10 @@ ${data.description}
 -[Questions](#questions)
 
 ## Installation
-${data.installation}
+In order to install dependencies use ${data.installation}.
 
 ## Usage
-In order to install dependencies use ${data.installation}.
+${data.info}
 
 ## Contributing
 ${data.contributing}
